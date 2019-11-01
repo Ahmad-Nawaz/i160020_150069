@@ -7,10 +7,10 @@ The user would first log in to our app. After log In, the chat menu would be dis
 
 # Our app has following features:
 
-1)Create local group
+1. Create local group
 
-2) Send and receive text messages
+2. Send and receive text messages
 
-3) Send and receive image and voice recordings
+3. Send and receive image and voice recordings
 
-4) Meet a friend using google map.
+4. Meet a friend using google map.
