@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contact_Menu">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"
+        android:text="Hello World!" />
+    <EditText
+        android:id="@+id/message_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter message"
+        android:background="#CDCDCD"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"/>
+    <Button
+        android:id="@+id/m_send_btn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_send_black_24dp"
+        android:backgroundTint="#3399FF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/send_img"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/m_send_btn"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/ic_camera_alt_black_24dp"
+        />
+
+    <Button
+        android:id="@+id/m_record_btn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_mic_black_24dp"
+        android:layout_toLeftOf="@+id/send_img"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>
+
+
+

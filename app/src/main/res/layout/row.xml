@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_layout_"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="@drawable/selector_row">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ci"
+        android:layout_height="50dp"
+        android:layout_width="50dp"/>
+
+<!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        android:id="@+id/notify_ci"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_height="10dp"-->
+<!--        android:layout_width="10dp"-->
+<!--        android:layout_marginLeft="40dp"-->
+<!--        android:background="@drawable/ic_done_black_24dp"-->
+<!--        android:backgroundTint="#77D90C"-->
+<!--        android:foregroundGravity="bottom"-->
+<!--        />-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/notify_online_ci"
+        android:layout_marginTop="38dp"
+        android:layout_height="10dp"
+        android:layout_width="10dp"
+        android:layout_marginLeft="38dp"
+        android:src="#77D90C"
+        android:foregroundGravity="bottom"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ci"
+        android:textSize="20dp"
+        android:text="Name"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ci"
+        android:layout_below="@+id/name"
+        android:text="address"
+        android:textColor="#515151"
+        />
+    <TextView
+        android:id="@+id/phno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ci"
+        android:layout_below="@+id/ci"
+        android:text="12345678"
+        android:textColor="#515151"
+        android:visibility="gone"
+        />
+    <ImageView
+        android:id="@+id/selected_row"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_done_black_24dp"
+        android:backgroundTint="#77D90C"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/phno"
+        android:background="#000"/>
+
+
+</RelativeLayout>

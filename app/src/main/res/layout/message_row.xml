@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:clipToPadding="false"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/reciver_profile"
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:foregroundGravity="bottom"
+        />
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_height="200dp"
+        android:layout_width="200dp"
+        android:layout_marginLeft="33dp"
+        android:background="@drawable/rounded_edges_message"
+        android:backgroundTint="#EEF1F6"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/message_1"
+        android:text="hi man,"
+        android:background="@drawable/rounded_edges_message"
+        android:backgroundTint="#EEF1F6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:padding="8dp"
+        android:layout_marginLeft="33dp"
+        android:textColor="#171B1F"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/iv1"
+        android:visibility="gone"
+
+        />
+    <Button
+        android:id="@+id/audio_message_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/iv1"
+        android:drawableLeft="@drawable/ic_play_arrow_black_24dp"
+        android:visibility="gone"
+        />
+
+
+
+
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_height="200dp"
+        android:layout_width="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/rounded_edges_message"
+        android:backgroundTint="#FF9CE49E"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/message_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv2"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="50dp"
+        android:textSize="20dp"
+        android:text="hi man,"
+        android:background="@drawable/rounded_edges_message"
+        android:backgroundTint="#9CE49E"
+        android:padding="8dp"
+        android:textColor="#242222"
+        android:layout_marginTop="4dp"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/audio_message_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_2"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="50dp"
+        android:drawableLeft="@drawable/ic_play_arrow_black_24dp"
+        android:text="Play audio"
+        android:visibility="gone"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/send_tick"
+        android:layout_below="@+id/audio_message_btn2"
+        android:layout_height="20dp"
+        android:layout_width="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_done_black_24dp"
+        android:foregroundGravity="bottom"
+        android:visibility="gone"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/seen_tick"
+        android:layout_height="20dp"
+        android:layout_width="20dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/ic_done_all_black_24dp"
+        android:foregroundGravity="bottom"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
